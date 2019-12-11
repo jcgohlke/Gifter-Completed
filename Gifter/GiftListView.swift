@@ -54,10 +54,6 @@ struct GiftListView: View {
           }
         )
         .navigationBarTitle("Gifter", displayMode: .inline)
-        .onAppear() {
-          self.giftStats.purchasedGifts = self.giftList.purchasedItems.count
-          self.giftStats.totalGifts = self.giftList.items.count - self.giftList.purchasedItems.count
-        }
         NavigationLink(destination: GiftStatsView()) {
           HStack {
             Image(systemName: "info.circle")
@@ -66,7 +62,11 @@ struct GiftListView: View {
         }
       }
     }
-    .sheet(isPresented: self.$showingAddGift) {
+    .sheet(isPresented: self.$showingAddGift,
+           onDismiss: {
+            self.giftStats.purchasedGifts = self.giftList.purchasedItems.count
+            self.giftStats.totalGifts = self.giftList.items.count - self.giftList.purchasedItems.count
+    }) {
       NewGiftView(giftList: self.giftList, isPresented: self.$showingAddGift)
     }
   }
