@@ -13,7 +13,6 @@
 		18D775C722AD944400AE281E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D775C622AD944400AE281E /* Assets.xcassets */; };
 		18D775CA22AD944400AE281E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D775C922AD944400AE281E /* Preview Assets.xcassets */; };
 		18D775D822AD963800AE281E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D775DA22AD963800AE281E /* LaunchScreen.storyboard */; };
-		F3B6AE3C2397310600C93B91 /* PurchasedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B6AE3B2397310600C93B91 /* PurchasedButton.swift */; };
 		F3B6AE3E2397313F00C93B91 /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B6AE3D2397313F00C93B91 /* Gift.swift */; };
 		F3B6AE402397316100C93B91 /* GiftList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B6AE3F2397316100C93B91 /* GiftList.swift */; };
 		F3B6AE422397318200C93B91 /* NewGiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B6AE412397318200C93B91 /* NewGiftView.swift */; };
@@ -34,7 +33,6 @@
 		18D775C922AD944400AE281E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		18D775CE22AD944400AE281E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18D775DE22AD96B400AE281E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F3B6AE3B2397310600C93B91 /* PurchasedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasedButton.swift; sourceTree = "<group>"; };
 		F3B6AE3D2397313F00C93B91 /* Gift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gift.swift; sourceTree = "<group>"; };
 		F3B6AE3F2397316100C93B91 /* GiftList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftList.swift; sourceTree = "<group>"; };
 		F3B6AE412397318200C93B91 /* NewGiftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGiftView.swift; sourceTree = "<group>"; };
@@ -112,7 +110,6 @@
 			children = (
 				18D775C422AD944300AE281E /* GiftListView.swift */,
 				F3B6AE432397396D00C93B91 /* GiftRowView.swift */,
-				F3B6AE3B2397310600C93B91 /* PurchasedButton.swift */,
 				F3B6AE412397318200C93B91 /* NewGiftView.swift */,
 				F3B6AE4E239744FE00C93B91 /* GiftStatsView.swift */,
 			);
@@ -209,7 +206,6 @@
 				18D775C322AD944300AE281E /* SceneDelegate.swift in Sources */,
 				F3B6AE422397318200C93B91 /* NewGiftView.swift in Sources */,
 				F3B6AE4D239743A100C93B91 /* GiftStats.swift in Sources */,
-				F3B6AE3C2397310600C93B91 /* PurchasedButton.swift in Sources */,
 				F3B6AE3E2397313F00C93B91 /* Gift.swift in Sources */,
 				18D775C522AD944300AE281E /* GiftListView.swift in Sources */,
 				F3B6AE4A2397400500C93B91 /* Binding.swift in Sources */,

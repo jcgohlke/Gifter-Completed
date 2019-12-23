@@ -37,7 +37,13 @@ struct GiftRowView: View {
   
   var body: some View {
     HStack(spacing: 12) {
-      PurchasedButton(gift: $gift)
+      Button(action: {
+        self.gift.isPurchased.toggle()
+      }) {
+        Image(systemName: gift.isPurchased ? "gift.fill" : "gift")
+          .foregroundColor(gift.isPurchased ? .green : .black)
+          .font(.system(size: 28, weight: .regular))
+      }
       
       VStack(alignment: .leading, spacing: 4) {
         Text(gift.description)
@@ -57,7 +63,7 @@ struct GiftRowView: View {
 // Preview
 // =======
 
-struct GiftCellView_Previews: PreviewProvider {
+struct GiftRowView_Previews: PreviewProvider {
   static var previews: some View {
     GiftRowView(gift: .constant(Gift(description: "PS4 Controller", recipient: "Doug", price: 38.99)))
   }

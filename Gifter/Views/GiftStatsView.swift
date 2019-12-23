@@ -36,11 +36,11 @@ struct GiftStatsView: View {
     VStack(alignment: .leading, spacing: 12) {
       Text("Gifts Purchased")
         .font(.headline)
-      Text("\(giftStats.purchasedGifts)")
+      Text("\(1)")
         .font(.system(size: 24))
       Text("Total Gifts")
         .font(.headline)
-      Text("\(giftStats.totalGifts)")
+      Text("\(3)")
         .font(.system(size: 24))
       Spacer()
     }

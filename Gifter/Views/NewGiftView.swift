@@ -42,24 +42,22 @@ struct NewGiftView: View {
   
   var body: some View {
     NavigationView {
-      VStack {
-        Form {
-          TextField("Recipient's Name", text: $recipient)
-          TextField("Description", text: $description)
-          TextField("Price", text: $price)
-          Toggle(isOn: $purchased) { Text("Purchased") }
-          Button(action: {
-            self.giftList.items.append(Gift(description: self.description, recipient: self.recipient, price: Double(self.price) ?? 0.0, isPurchased: self.purchased))
-            
-            self.isPresented = false
-          }) {
-            HStack {
-              Image(systemName: "plus.square")
-              Text("Add Gift")
-            }
+      Form {
+        TextField("Recipient's Name", text: $recipient)
+        TextField("Description", text: $description)
+        TextField("Price", text: $price)
+        Toggle(isOn: $purchased) { Text("Purchased") }
+        Button(action: {
+          self.giftList.items.append(Gift(description: self.description, recipient: self.recipient, price: Double(self.price) ?? 0.0, isPurchased: self.purchased))
+          
+          self.isPresented = false
+        }) {
+          HStack {
+            Image(systemName: "plus.square")
+            Text("Add Gift")
           }
-          .disabled(recipient.count == 0 || description.count == 0 || price.count == 0)
         }
+        .disabled(recipient.count == 0 || description.count == 0 || price.count == 0)
       }
       .navigationBarTitle("New Gift", displayMode: .inline)
     }

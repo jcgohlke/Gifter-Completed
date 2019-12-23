@@ -53,7 +53,7 @@ struct GiftListView: View {
               .font(.system(size: 22))
           }
         )
-        .navigationBarTitle("Gifter", displayMode: .inline)
+          .navigationBarTitle("Gifter", displayMode: .inline)
         NavigationLink(destination: GiftStatsView()) {
           HStack {
             Image(systemName: "info.circle")
@@ -62,7 +62,7 @@ struct GiftListView: View {
         }
       }
     }
-    .sheet(isPresented: self.$showingAddGift,
+    .sheet(isPresented: $showingAddGift,
            onDismiss: {
             self.giftStats.purchasedGifts = self.giftList.purchasedItems.count
             self.giftStats.totalGifts = self.giftList.items.count - self.giftList.purchasedItems.count
